@@ -1,8 +1,8 @@
 {
   "name": "raumnebenan",
-  "displayName": "raumnebenan - product thinking",
+  "displayName": "raumnebenan - product thinking (mcp)",
   "description": "raumnebenan.de is a resource hub focused on actionable product thinking for product owners, product designers, business analysts, product managers, agile coaches, and user researchers.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "raumnebenan",
   "license": "MIT",
   "ion": "images/raumnebenan.png",
