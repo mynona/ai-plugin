@@ -2,16 +2,67 @@
 
 raumnebenan.de is a resource hub focused on actionable product thinking for product owners, product designers, business analysts, product managers, agile coaches, and user researchers.
 
-This extension provides an Agent Plugin that integrates the **raumnebenan** MCP server into VS Code Chat.
+- plugin manifest is in `plugins/raumnebenan/.github/plugin.json`
+- marketplace manifest is in `.github/plugin/marketplace.json`
+- reusable skill content is in `skills/raumnebenan/`
+- MCP server config is in `.mcp.json`
 
-## Features
+## Repository structure
 
-- **Product Thinking Tools**: Access guides and tools to help teams understand users, identify opportunities, and validate ideas.
-- **MCP Integration**: Seamlessly use raumnebenan resources directly in your chat prompts.
+```text
+.
+├── .github/
+│   └── plugin/
+│       └── marketplace.json
+├── .mcp.json
+├── plugins/
+│   └── raumnebenan/
+│       └── .github/
+│           └── plugin.json
+└── skills/
+	└── raumnebenan/
+		└── SKILL.md
+```
 
-## How to use
+## Install via marketplace (recommended)
 
-Once installed, you can use the `@raumnebenan` participant (if configured) or the tools provided by the MCP server in any chat session.
+Enable plugins and add this repository as a marketplace in VS Code user settings:
+
+```json
+{
+	"chat.plugins.enabled": true,
+	"chat.plugins.marketplaces": [
+		"mynona/ai-plugin"
+	]
+}
+```
+
+Then open Extensions and search for `@agentPlugins` to install `raumnebenan`.
+
+Copilot CLI marketplace checks:
+
+```bash
+copilot plugin marketplace browse mynona/ai-plugin
+copilot plugin install raumnebenan@raumnebenan-ai-plugins
+```
+
+## Install without marketplace
+
+Install directly from GitHub and point to the plugin subdirectory:
+
+```bash
+copilot plugin install mynona/ai-plugin:plugins/raumnebenan
+```
+
+You can also add the local plugin path in VS Code settings:
+
+```json
+{
+	"chat.plugins.paths": [
+		"/absolute/path/to/ai_plugin/plugins/raumnebenan"
+	]
+}
+```
 
 ## License
 

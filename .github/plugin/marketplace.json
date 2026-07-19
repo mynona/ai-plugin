@@ -1,0 +1,18 @@
+{
+  "name": "raumnebenan-ai-plugins",
+  "owner": {
+    "name": "Andreas Soller"
+  },
+  "metadata": {
+    "description": "Marketplace for raumnebenan Copilot agent plugin",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "raumnebenan",
+      "description": "Product thinking resources and MCP integration for VS Code Chat",
+      "version": "0.1.1",
+      "source": "./plugins/raumnebenan"
+    }
+  ]
+}

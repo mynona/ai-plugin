@@ -6,6 +6,13 @@
   "author": {
     "name": "Andreas Soller"
   },
-  "skills": "../skills/",
-  "mcpServers": "../.mcp.json"
+  "license": "MIT",
+  "keywords": [
+    "product-thinking",
+    "mcp"
+  ],
+  "skills": [
+    "../../skills/raumnebenan"
+  ],
+  "mcpServers": "../../.mcp.json"
 }
