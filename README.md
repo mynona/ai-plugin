@@ -2,10 +2,12 @@
 
 raumnebenan.de is a resource hub focused on actionable product thinking for product owners, product designers, business analysts, product managers, agile coaches, and user researchers.
 
-- plugin manifest is in `plugins/raumnebenan/.github/plugin.json`
+- the installable Copilot CLI plugin lives in `plugins/raumnebenan/`
+- plugin manifest is in `plugins/raumnebenan/plugin.json`
 - marketplace manifest is in `.github/plugin/marketplace.json`
-- reusable skill content is in `skills/raumnebenan/`
-- MCP server config is in `.mcp.json`
+- plugin skill content is in `plugins/raumnebenan/skills/raumnebenan/`
+- plugin MCP server config is in `plugins/raumnebenan/.mcp.json`
+- the repository root also contains a VS Code extension wrapper that points to the plugin directory above
 
 ## Repository structure
 
@@ -14,14 +16,37 @@ raumnebenan.de is a resource hub focused on actionable product thinking for prod
 ├── .github/
 │   └── plugin/
 │       └── marketplace.json
-├── .mcp.json
+├── package.json
 ├── plugins/
 │   └── raumnebenan/
-│       └── .github/
-│           └── plugin.json
+│       ├── .mcp.json
+│       ├── plugin.json
+│       └── skills/
+│           └── raumnebenan/
+│               └── SKILL.md
 └── skills/
-	└── raumnebenan/
-		└── SKILL.md
+    └── raumnebenan/
+        └── SKILL.md
+```
+
+## Local plugin install
+
+The official docs describe a plugin as a directory whose root contains `plugin.json`. In this repository that directory is:
+
+```text
+plugins/raumnebenan/
+```
+
+Install that directory directly when testing locally:
+
+```bash
+copilot plugin install ./plugins/raumnebenan
+```
+
+After reinstalling, verify it loaded:
+
+```bash
+copilot plugin list
 ```
 
 ## Install via marketplace (recommended)
