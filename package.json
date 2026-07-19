@@ -34,7 +34,7 @@
     "agentPlugins": [
       {
         "id": "raumnebenan",
-        "path": "./plugin.json"
+        "path": "./.github/plugin.json"
       }
     ]
   },
