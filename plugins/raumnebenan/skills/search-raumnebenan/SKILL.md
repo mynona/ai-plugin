@@ -20,13 +20,13 @@ Each category contains **Stories** (thematic groups), which in turn contain **Ar
 ## How to find information
 
 ### 1. General discovery
-- To get an overview of all available content, use the `list_articles` tool or the `list_articles` prompt.
+- To get an overview of all available content, use the `list_articles` prompt.
 - To see thematic groups, use the `list_stories` tool.
 - To understand the product pillars, use the `list_categories` tool.
 
 ### 2. Targeted search
 - To find articles on a specific topic (e.g., "Kano model", "User Interviews"), use the `search_articles` tool with a descriptive query.
-- To find all articles within a specific pillar, use the `list_articles_by_category` prompt (categories: foundation, sense, focus, discover, deliver).
+- To find all articles within a specific pillar, use the `list_articles_by_category` prompt (category slugs: foundation, sense, focus, discover, deliver; human-facing pillars: Foundation, Sense, Focus, Discovery, Delivery).
 
 ### 3. Reading and Summarizing
 - Once you have found relevant articles, retrieve their details using `get_article_details_by_slugs` or `get_article_details_by_uuids`.
