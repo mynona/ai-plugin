@@ -1,0 +1,10 @@
+{
+  "name": "raumnebenan",
+  "description": "raumnebenan.de is a resource hub focused on actionable product thinking for product owners, product designers, business analysts, product managers, agile coaches, and user researchers. The site provides clear, structured guides and tools to help teams understand users, identify opportunities, validate ideas, and deliver products that create real user and business value.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Andreas Soller"
+  },
+  "skills": "skills/",
+  "mcpServers": ".mcp.json"
+}

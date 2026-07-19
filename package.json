@@ -1,0 +1,41 @@
+{
+  "name": "raumnebenan",
+  "displayName": "raumnebenan",
+  "description": "raumnebenan.de is a resource hub focused on actionable product thinking for product owners, product designers, business analysts, product managers, agile coaches, and user researchers.",
+  "version": "0.1.0",
+  "publisher": "raumnebenan",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mynona/ai-plugin"
+  },
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "AI",
+    "Other"
+  ],
+  "keywords": [
+    "mcp",
+    "product thinking",
+    "raumnebenan"
+  ],
+  "contributes": {
+    "agentPlugins": [
+      {
+        "id": "raumnebenan",
+        "path": "./plugin.json"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm install",
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@vscode/vsce": "^3.0.0"
+  }
+}
