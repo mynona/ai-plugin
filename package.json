@@ -1,10 +1,11 @@
 {
   "name": "raumnebenan",
-  "displayName": "raumnebenan",
+  "displayName": "raumnebenan - product thinking",
   "description": "raumnebenan.de is a resource hub focused on actionable product thinking for product owners, product designers, business analysts, product managers, agile coaches, and user researchers.",
   "version": "0.1.0",
   "publisher": "raumnebenan",
   "license": "MIT",
+  "ion": "images/raumnebenan.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/mynona/ai-plugin"
@@ -14,6 +15,7 @@
   },
   "categories": [
     "AI",
+    "Chat",
     "Other"
   ],
   "keywords": [
@@ -25,7 +27,8 @@
     "mcp",
     "agent-plugin",
     "copilot-plugin",
-    "ai"
+    "ai",
+    "raumnebenan"
   ],
   "contributes": {
     "agentPlugins": [
