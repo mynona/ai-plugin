@@ -2,7 +2,7 @@
   "name": "raumnebenan",
   "displayName": "raumnebenan - product thinking (mcp)",
   "description": "raumnebenan.de is a resource hub focused on actionable product thinking for product owners, product designers, business analysts, product managers, agile coaches, and user researchers.",
-  "version": "0.1.1",
+  "version": "0.1.6",
   "publisher": "raumnebenan",
   "license": "MIT",
   "homepage": "https://www.raumnebenan.de",
@@ -44,9 +44,12 @@
     "agentPlugins": [
       {
         "id": "raumnebenan",
-        "path": "./plugins/raumnebenan/plugin.json"
+        "path": "./plugins/raumnebenan"
       }
-    ]
+    ],
+    "configurationDefaults": {
+      "chat.plugins.enabled": true
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm install",

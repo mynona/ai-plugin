@@ -1,0 +1,13 @@
+{
+  "extraKnownMarketplaces": {
+    "raumnebenan-marketplace": {
+      "source": {
+        "source": "github",
+        "repo": "mynona/ai-plugin"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "raumnebenan@raumnebenan-marketplace": true
+  }
+}

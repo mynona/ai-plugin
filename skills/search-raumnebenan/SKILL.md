@@ -1,5 +1,5 @@
 ---
-name: raumnebenan
+name: search-raumnebenan
 description: Comprehensive skill for searching and retrieving product thinking resources from raumnebenan.de.
 ---
 

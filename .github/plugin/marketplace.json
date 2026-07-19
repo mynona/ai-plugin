@@ -11,7 +11,7 @@
     {
       "name": "raumnebenan",
       "description": "Product thinking resources and MCP integration for VS Code Chat",
-      "version": "0.1.1",
+      "version": "0.1.6",
       "source": "./plugins/raumnebenan"
     }
   ]
