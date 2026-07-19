@@ -5,13 +5,13 @@
   },
   "metadata": {
     "description": "Marketplace for raumnebenan Copilot agent plugin",
-    "version": "1.0.0"
+    "version": "1.0.8"
   },
   "plugins": [
     {
       "name": "raumnebenan",
       "description": "Product thinking resources and MCP integration for VS Code Chat",
-      "version": "0.1.6",
+      "version": "1.0.8",
       "source": "./plugins/raumnebenan"
     }
   ]
