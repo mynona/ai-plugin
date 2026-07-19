@@ -17,9 +17,15 @@
     "Other"
   ],
   "keywords": [
+    "product-thinking",
+    "user-research",
+    "design-thinking",
+    "product-strategy",
+    "agile-delivery",
     "mcp",
-    "product thinking",
-    "raumnebenan"
+    "agent-plugin",
+    "copilot-plugin",
+    "ai"
   ],
   "contributes": {
     "agentPlugins": [
