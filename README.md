@@ -74,6 +74,32 @@ Then open Extensions and search for `@agentPlugins` to install `raumnebenan`.
 
 Note: the VS Code extension wrapper sets `chat.plugins.enabled` via `configurationDefaults` while installed. This is extension-scoped behavior, not a hardcoded user settings edit.
 
+## MCP availability (workspace vs global)
+
+To make MCP tools usable reliably after install, ensure the `raumnebenan` server is present in one of these configs:
+
+- Workspace: `.vscode/mcp.json`
+- Global profile: `MCP: Open User Configuration` (user `mcp.json`)
+
+Use this schema in `mcp.json`:
+
+```json
+{
+	"servers": {
+		"raumnebenan": {
+			"type": "http",
+			"url": "https://www.raumnebenan.de/mcp"
+		}
+	}
+}
+```
+
+After adding/updating config:
+
+1. Run `MCP: List Servers` and verify `raumnebenan` is enabled.
+2. If needed, run `MCP: Reset Trust`, then trust and start the server.
+3. Reload the VS Code window.
+
 Copilot CLI marketplace checks:
 
 ```bash

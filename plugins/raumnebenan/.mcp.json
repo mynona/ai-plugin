@@ -1,4 +1,10 @@
 {
+  "servers": {
+    "raumnebenan": {
+      "type": "http",
+      "url": "https://www.raumnebenan.de/mcp"
+    }
+  },
   "mcpServers": {
     "raumnebenan": {
       "type": "http",

@@ -12,11 +12,16 @@ Product thinking resources and MCP integration for VS Code Chat.
 
 ### Via MCP Configuration
 
-Add to your `.mcp.json` or IDE MCP settings:
+Add to `mcp.json` in one of these locations:
+
+- Workspace: `.vscode/mcp.json`
+- Global profile: open via command `MCP: Open User Configuration`
+
+Use this schema (current VS Code):
 
 ```json
 {
-	"mcpServers": {
+	"servers": {
 		"raumnebenan": {
 			"type": "http",
 			"url": "https://www.raumnebenan.de/mcp"
@@ -24,6 +29,8 @@ Add to your `.mcp.json` or IDE MCP settings:
 	}
 }
 ```
+
+Compatibility note: older plugin/mcp examples may use `mcpServers`. Current VS Code MCP config expects `servers`.
 
 The plugin connects to the hosted raumnebenan MCP endpoint. It does not launch a local MCP server for tool calls.
 
@@ -43,4 +50,9 @@ The MCP tool surface is served by the hosted endpoint above, so updating a local
 
 ## MCP tools
 
-This plugin exposes tools and prompts from the MCP server. If tools are unavailable, reload the window and ensure the plugin is enabled in Agent Plugins.
+This plugin exposes tools and prompts from the MCP server. If tools are unavailable:
+
+1. Run `MCP: List Servers` and verify `raumnebenan` is present and enabled.
+2. Run `MCP: Reset Trust` and trust the server again.
+3. Ensure the server exists either in workspace `.vscode/mcp.json` or global user `mcp.json`.
+4. Reload VS Code window.
